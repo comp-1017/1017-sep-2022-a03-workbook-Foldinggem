@@ -1,0 +1,59 @@
+footer{
+    background-color: #333;
+    color: yellow;
+}
+
+/**************************
+make a specific class with you css rule
+**************************/
+
+/*.nav-background{
+    background-color: #ddd;
+} */
+
+ul{
+    background-color: firebrick;
+}
+
+/*************************
+decendant selector
+************************/
+nav ul{
+    background-color: #ddd;
+}
+
+/************************************
+specificity:
+it is a calue assigned to the selector depending on meeting 
+different criteria
+
+selector type
+element selector gat a value of 1
+class selector get a value of 10
+id selector get a value of 100
+SPECIAL NOTE: all inline styling gets a value of 1000
+
+specificity discitions are gased on the value of the selector
+
+if the specificity of confiction rules is the same then
+"the last coded rule wins"
+**********************************************/
+
+footer,
+footer a{
+    color: white;
+}
+
+/**********************************************
+first set element select li to a border-bottom
+
+consern: BOTH nav and footer li were affected
+
+solutions:
+a) use a decendant selector (nav li > li)
+b) use a class selector (li-border > li) targeted class
+**********************************************/
+
+.li-border{
+    border-bottom: 1px solid black;
+}
