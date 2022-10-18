@@ -142,7 +142,7 @@ when you override the psuedo class, you are overriding
     the defaults of the class
 order:
 a:link unused anchor link
-a:hober used when your cursor hobers over the anchor
+a:hover used when your cursor hobers over the anchor
 a:visited used after you have hone to the anchor link
 a:active used when you are clicking the anchor link
 
