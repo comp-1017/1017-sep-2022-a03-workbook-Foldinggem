@@ -1,0 +1,37 @@
+/********************************************
+
+margin: the outter most part of the box
+    represents seperation BETWEEN boxes
+    horizontal margins are added togwther
+    vertical margins are COLLASPED
+        if the vertical margins are postitive then
+        the larger of the two margins are used
+
+    margin can be coded in various styles
+    long hand: margin top: size; margin right: size; margin bottom: size; margin left: size;
+    equal opposite sides: margin: tb size rightleft size
+    short hand unequal: margin: top size right size bottom size left size;
+
+***********************************************/
+
+.margin-section{
+    margin: 24px 12px 24px 12px;
+}
+
+/************************************************
+border: the second part of the box
+        represents the outter desplayable edge of boxes
+
+border can be coded in various styles
+long hand: border-eidth: size; border-style: style; border-color: hex-value;
+short hand: border: size style color;
+
+border-width is made up to border-top, border-right, border-bottom, border-left
+
+********************************************************/
+
+.border-section{
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+}
