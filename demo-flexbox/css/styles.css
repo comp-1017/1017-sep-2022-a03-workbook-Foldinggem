@@ -7,7 +7,8 @@ body {
     width: 960px;
     margin: 0 auto;
     font-size: 100%;
-    line-height: 1.5
+    line-height: 1.5;
+    background-color: lightgrey;
 }
 
 
@@ -33,4 +34,96 @@ body {
 
 .clearfix {
     *zoom: 1;
+}
+
+/*
+default dosplay of elements on your page is called "stacked"
+
+to get your rlrments on the same line we use something called flexbox
+to intoke flexbox use the rule
+
+display: flex;
+
+flexbox attempts to place all elements withing its "immediate specified container" on the same line
+
+immediate?? the next level of elements
+
+flexbox will automatically adjust measurements to gat all elements to appear on the same line REGAUDLESS of the 
+physical width set for the element
+
+problem I dont want all elements on the same line gaving their measurments altered
+
+solution alter the default wrapping for flexbox which is none
+
+rule: flex wrap: wrap;
+
+this will place as many elements as possible on a single row without adjusting the measurements of your elements
+any leftover elements will wrap to the following line untol all elements have been displayed
+
+warning: flex-wrap affect a flex display area. wihtout the display: flex;
+
+flexvox will affect positioning that is normal within your page such as
+margin collapse.
+*/
+
+main{
+    background-color: lightgrey;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer{
+    background-color: lightgrey;
+    display: flex;
+}
+
+/*
+give the classes some height and width due to the fact that the elements do not contain
+any text tool content
+
+set height to a chosen value of 300px
+set the width of each box to fit the final given image
+
+margin 30px
+padding and border = 0
+page width is 960
+
+page width = (box) + (box) + ... + remainder
+
+our boxes are of equal size
+
+page width = n-columns + (box) + remainder
+960 = 2 * (30 + 0 + 0 + content + 0 + 0 + 0) + 30
+960 = 60 + 30 + content
+870 / 2 = content
+435 = content
+*/
+
+.red-paint{
+    height: 300px;
+    width: 435px;
+    background-color: red;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.blue-paint{
+    height: 300px;
+    width: 435px;
+    background-color: blue;
+    margin: 30px 0px 0px 30px;
+}
+
+/*
+page = lm + lp + lb + content + rb + rp + rm
+960 = 30 + 0 + 0 + content + 0 + 0 + 0 + 30
+900 = content
+*/
+
+.black-paint{
+    height: 50px;
+    width: 900px;
+    background-color: black;
+    margin: 30px 0px 30px 30px;
 }

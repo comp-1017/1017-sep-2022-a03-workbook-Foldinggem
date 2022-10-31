@@ -32,3 +32,39 @@ nav{
 	margin-top: 48px;
 	background-color: #ddd;
 }
+
+header, main{
+	height: 480px;
+	margin-top: 24px;
+	background-color: #ddd;
+}
+
+main{
+	height: 800px;
+}
+
+footer{
+	height: 150px;
+	margin:24px 0 40px 0;
+	background-color: #ddd;
+}
+
+/*****************************************
+what is the required width of section?
+
+box model
+page width = lm + lb + lp + content + rp + rb + rm
+960 = 30 + 2 + 0 + content + 0 + 2 + 30
+960 = 64 + content
+width = 960 - 64
+width = 896
+
+*******************************************/
+
+main section{
+	border: 2px solid black;
+	margin: 30px;
+	height: 200px;
+	background-color: white;
+	width: 896px;
+}
