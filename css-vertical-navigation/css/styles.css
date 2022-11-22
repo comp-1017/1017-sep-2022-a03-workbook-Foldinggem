@@ -31,6 +31,12 @@ header > img {
 	margin: 14px;
 }
 
+.navbanner{
+	background-image: url(../img/pattern-bg.gif) repeat;
+	height: 690px;
+	padding-top: 60px;
+}
+
 /*style the banner
 move the banner down by using the margin top
 added the backfround image which has no effect on physical content size
